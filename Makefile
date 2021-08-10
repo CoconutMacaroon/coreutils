@@ -10,3 +10,7 @@ cat: cat.c out/utils.o
 
 more: more.c more.h out/utils.o
 	gcc -c more.c -o out/more.o
+
+.PHONY: clean
+clean:
+	rm -f 'bin/'*.exe ; rm -f 'out/'*.o
