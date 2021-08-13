@@ -14,3 +14,12 @@ more: more.c more.h out/utils.o
 .PHONY: clean
 clean:
 	rm -f 'bin/'*.exe ; rm -f 'out/'*.o
+
+#            +-------+
+#     +----> | utils | <---+
+#     |      +-------+     |
+#     |                    |
+#  +-----+              +------+
+#  | cat |              | more |
+#  +-----+              +------+
+
