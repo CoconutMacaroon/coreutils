@@ -1,4 +1,4 @@
-all: utils cat more
+all: format utils cat more
 	gcc out/utils.o out/cat.o -o bin/cat.exe
 	gcc out/utils.o out/more.o -o bin/more.exe
 
@@ -14,6 +14,9 @@ more: more.c more.h out/utils.o
 .PHONY: clean
 clean:
 	rm -f 'bin/'*.exe ; rm -f 'out/'*.o
+.PHONY: format
+format:
+	clang-format -i -style=file *.c *.h
 
 #            +-------+
 #     +----> | utils | <---+

@@ -1,0 +1,8 @@
+---
+Language:        Cpp
+BasedOnStyle:  llvm
+IndentWidth: 4
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
